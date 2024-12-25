@@ -1,10 +1,11 @@
-package com.app.service;
+package com.app.services;
 
 import java.sql.*;
+import java.sql.Connection;
 
 public class ConnectionDB {
 
-	Connection conn = null;
+    Connection conn = null;
 
     public Connection GetDB() {
 
@@ -27,8 +28,8 @@ public class ConnectionDB {
         return conn;
     }
     
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         new ConnectionDB().GetDB();
-    }
-	
+    }*/
+
 }
